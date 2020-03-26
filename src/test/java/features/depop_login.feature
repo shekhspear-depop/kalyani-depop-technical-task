@@ -11,12 +11,12 @@ Feature: Depop Login
       |isValid        |username                      |password       |isLoggedIn              |
       |"emptyUser"    |""                            |"kAlyani123!"  |"userRequiredError"     |
       |"emptyPassword"|"kalyanibodanapu"             |""             |"PasswordRequiredError" |
-      |"invalid"      |"kalyani@bodanapu"            |"kni123!"      |"unknownError"          |
+      |"invalid"      |"kalyani8bodanapu"            |"kni123!"      |"NotLoggedIn"           |
       |"invalid"      |"kalyanibodanapu"             |"kni123!"      |"NotLoggedIn"           |
       |"valid"        |"kalyanibodanapu"             |"kAlyani123!"  |"LoggedIn"              |
-      |"invalid"      |"12345"                       |"kAlyani123!"  |"NotLoggedIn"           |
+      |"invalid"      |"123456"                      |"kAlyani123!"  |"NotLoggedIn"           |
       |"valid"        |"bkalyani10@yahoo.com"        |"kAlyani123!"  |"LoggedIn"              |
-      |"invalid"      |"00000$^"                     |"4534353"      |"NotLoggedIn"           |
+      |"unknownError" |"00000$^"                     |"4534353"      |"unknownError"          |
 
 
 #  Scenario: InValid Logging in with empty fields

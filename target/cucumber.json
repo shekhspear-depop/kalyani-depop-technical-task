@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-03-22T18:25:46.802Z",
+        "start_timestamp": "2020-03-26T21:28:00.229Z",
         "before": [
           {
             "result": {
-              "duration": 1677000000,
+              "duration": 1652000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 176000000,
+              "duration": 125000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1695000000,
+              "duration": 1211000000,
               "status": "passed"
             },
             "line": 6,
@@ -47,11 +47,197 @@
           },
           {
             "result": {
-              "duration": 434000000,
+              "duration": 286000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "Enter \"invalid\" login details username_\"kalyani@bodanapu\" and password_\"kni123!\"",
+            "name": "Enter \"emptyUser\" login details username_\"\" and password_\"kAlyani123!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"emptyUser\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"kAlyani123!\"",
+                  "offset": 57
+                }
+              ],
+              "location": "steps.Depop_Login.enter_login_details_username__and_password_(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is \"userRequiredError\" with \"emptyUser\" details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userRequiredError\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"emptyUser\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.Depop_Login.user_is_with_details(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-26T21:28:03.643Z",
+        "before": [
+          {
+            "result": {
+              "duration": 869000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Valid/Invalid Logging in",
+        "description": "",
+        "id": "depop-login;valid/invalid-logging-in;login-credentials;3",
+        "after": [
+          {
+            "result": {
+              "duration": 116000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.AfterActions.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 825000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to Depop Login page",
+            "match": {
+              "location": "steps.Depop_Login.navigate_to_Depop_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 318000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter \"emptyPassword\" login details username_\"kalyanibodanapu\" and password_\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"emptyPassword\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"kalyanibodanapu\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 76
+                }
+              ],
+              "location": "steps.Depop_Login.enter_login_details_username__and_password_(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is \"PasswordRequiredError\" with \"emptyPassword\" details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PasswordRequiredError\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"emptyPassword\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.Depop_Login.user_is_with_details(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-26T21:28:05.844Z",
+        "before": [
+          {
+            "result": {
+              "duration": 867000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Valid/Invalid Logging in",
+        "description": "",
+        "id": "depop-login;valid/invalid-logging-in;login-credentials;4",
+        "after": [
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.AfterActions.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1163000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to Depop Login page",
+            "match": {
+              "location": "steps.Depop_Login.navigate_to_Depop_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 371000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter \"invalid\" login details username_\"kalyani8bodanapu\" and password_\"kni123!\"",
             "match": {
               "arguments": [
                 {
@@ -59,7 +245,7 @@
                   "offset": 6
                 },
                 {
-                  "val": "\"kalyani@bodanapu\"",
+                  "val": "\"kalyani8bodanapu\"",
                   "offset": 39
                 },
                 {
@@ -73,7 +259,7 @@
           },
           {
             "result": {
-              "duration": 346000000,
+              "duration": 425000000,
               "status": "passed"
             },
             "line": 8,
@@ -96,11 +282,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-03-22T18:25:51.209Z",
+        "start_timestamp": "2020-03-26T21:28:08.852Z",
         "before": [
           {
             "result": {
-              "duration": 909000000,
+              "duration": 893000000,
               "status": "passed"
             },
             "match": {
@@ -108,14 +294,14 @@
             }
           }
         ],
-        "line": 13,
+        "line": 15,
         "name": "Valid/Invalid Logging in",
         "description": "",
-        "id": "depop-login;valid/invalid-logging-in;login-credentials;3",
+        "id": "depop-login;valid/invalid-logging-in;login-credentials;5",
         "after": [
           {
             "result": {
-              "duration": 181000000,
+              "duration": 173000000,
               "status": "passed"
             },
             "match": {
@@ -128,7 +314,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1225000000,
+              "duration": 956000000,
               "status": "passed"
             },
             "line": 6,
@@ -140,7 +326,100 @@
           },
           {
             "result": {
-              "duration": 416000000,
+              "duration": 406000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter \"invalid\" login details username_\"kalyanibodanapu\" and password_\"kni123!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"kalyanibodanapu\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"kni123!\"",
+                  "offset": 70
+                }
+              ],
+              "location": "steps.Depop_Login.enter_login_details_username__and_password_(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 478000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is \"NotLoggedIn\" with \"invalid\" details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NotLoggedIn\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"invalid\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.Depop_Login.user_is_with_details(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-26T21:28:11.768Z",
+        "before": [
+          {
+            "result": {
+              "duration": 877000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BeforeActions.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Valid/Invalid Logging in",
+        "description": "",
+        "id": "depop-login;valid/invalid-logging-in;login-credentials;6",
+        "after": [
+          {
+            "result": {
+              "duration": 214000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.AfterActions.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 843000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate to Depop Login page",
+            "match": {
+              "location": "steps.Depop_Login.navigate_to_Depop_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 374000000,
               "status": "passed"
             },
             "line": 7,
@@ -166,7 +445,7 @@
           },
           {
             "result": {
-              "duration": 619000000,
+              "duration": 739000000,
               "status": "passed"
             },
             "line": 8,
@@ -189,11 +468,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-03-22T18:25:54.564Z",
+        "start_timestamp": "2020-03-26T21:28:14.821Z",
         "before": [
           {
             "result": {
-              "duration": 924000000,
+              "duration": 902000000,
               "status": "passed"
             },
             "match": {
@@ -201,14 +480,14 @@
             }
           }
         ],
-        "line": 14,
+        "line": 17,
         "name": "Valid/Invalid Logging in",
         "description": "",
-        "id": "depop-login;valid/invalid-logging-in;login-credentials;4",
+        "id": "depop-login;valid/invalid-logging-in;login-credentials;7",
         "after": [
           {
             "result": {
-              "duration": 176000000,
+              "duration": 172000000,
               "status": "passed"
             },
             "match": {
@@ -221,7 +500,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1086000000,
+              "duration": 1020000000,
               "status": "passed"
             },
             "line": 6,
@@ -233,11 +512,11 @@
           },
           {
             "result": {
-              "duration": 394000000,
+              "duration": 321000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "Enter \"invalid\" login details username_\"12345\" and password_\"kAlyani123!\"",
+            "name": "Enter \"invalid\" login details username_\"123456\" and password_\"kAlyani123!\"",
             "match": {
               "arguments": [
                 {
@@ -245,12 +524,12 @@
                   "offset": 6
                 },
                 {
-                  "val": "\"12345\"",
+                  "val": "\"123456\"",
                   "offset": 39
                 },
                 {
                   "val": "\"kAlyani123!\"",
-                  "offset": 60
+                  "offset": 61
                 }
               ],
               "location": "steps.Depop_Login.enter_login_details_username__and_password_(java.lang.String,java.lang.String,java.lang.String)"
@@ -259,7 +538,7 @@
           },
           {
             "result": {
-              "duration": 353000000,
+              "duration": 362000000,
               "status": "passed"
             },
             "line": 8,
@@ -282,11 +561,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-03-22T18:25:57.501Z",
+        "start_timestamp": "2020-03-26T21:28:17.601Z",
         "before": [
           {
             "result": {
-              "duration": 992000000,
+              "duration": 895000000,
               "status": "passed"
             },
             "match": {
@@ -294,14 +573,14 @@
             }
           }
         ],
-        "line": 15,
+        "line": 18,
         "name": "Valid/Invalid Logging in",
         "description": "",
-        "id": "depop-login;valid/invalid-logging-in;login-credentials;5",
+        "id": "depop-login;valid/invalid-logging-in;login-credentials;8",
         "after": [
           {
             "result": {
-              "duration": 259000000,
+              "duration": 171000000,
               "status": "passed"
             },
             "match": {
@@ -314,7 +593,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1637000000,
+              "duration": 900000000,
               "status": "passed"
             },
             "line": 6,
@@ -326,7 +605,7 @@
           },
           {
             "result": {
-              "duration": 435000000,
+              "duration": 375000000,
               "status": "passed"
             },
             "line": 7,
@@ -352,7 +631,7 @@
           },
           {
             "result": {
-              "duration": 575000000,
+              "duration": 579000000,
               "status": "passed"
             },
             "line": 8,
@@ -375,11 +654,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-03-22T18:26:01.405Z",
+        "start_timestamp": "2020-03-26T21:28:20.526Z",
         "before": [
           {
             "result": {
-              "duration": 919000000,
+              "duration": 903000000,
               "status": "passed"
             },
             "match": {
@@ -387,14 +666,14 @@
             }
           }
         ],
-        "line": 16,
+        "line": 19,
         "name": "Valid/Invalid Logging in",
         "description": "",
-        "id": "depop-login;valid/invalid-logging-in;login-credentials;6",
+        "id": "depop-login;valid/invalid-logging-in;login-credentials;9",
         "after": [
           {
             "result": {
-              "duration": 165000000,
+              "duration": 158000000,
               "status": "passed"
             },
             "match": {
@@ -407,7 +686,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2094000000,
+              "duration": 946000000,
               "status": "passed"
             },
             "line": 6,
@@ -419,24 +698,24 @@
           },
           {
             "result": {
-              "duration": 381000000,
+              "duration": 329000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "Enter \"invalid\" login details username_\"00000$^\" and password_\"4534353\"",
+            "name": "Enter \"unknownError\" login details username_\"00000$^\" and password_\"4534353\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"invalid\"",
+                  "val": "\"unknownError\"",
                   "offset": 6
                 },
                 {
                   "val": "\"00000$^\"",
-                  "offset": 39
+                  "offset": 44
                 },
                 {
                   "val": "\"4534353\"",
-                  "offset": 62
+                  "offset": 67
                 }
               ],
               "location": "steps.Depop_Login.enter_login_details_username__and_password_(java.lang.String,java.lang.String,java.lang.String)"
@@ -445,20 +724,20 @@
           },
           {
             "result": {
-              "duration": 357000000,
+              "duration": 174000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "User is \"NotLoggedIn\" with \"invalid\" details",
+            "name": "User is \"unknownError\" with \"unknownError\" details",
             "match": {
               "arguments": [
                 {
-                  "val": "\"NotLoggedIn\"",
+                  "val": "\"unknownError\"",
                   "offset": 8
                 },
                 {
-                  "val": "\"invalid\"",
-                  "offset": 27
+                  "val": "\"unknownError\"",
+                  "offset": 28
                 }
               ],
               "location": "steps.Depop_Login.user_is_with_details(java.lang.String,java.lang.String)"

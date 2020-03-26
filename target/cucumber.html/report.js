@@ -36,8 +36,32 @@ formatter.examples({
     },
     {
       "cells": [
+        "\"emptyUser\"",
+        "\"\"",
+        "\"kAlyani123!\"",
+        "\"userRequiredError\""
+      ]
+    },
+    {
+      "cells": [
+        "\"emptyPassword\"",
+        "\"kalyanibodanapu\"",
+        "\"\"",
+        "\"PasswordRequiredError\""
+      ]
+    },
+    {
+      "cells": [
         "\"invalid\"",
-        "\"kalyani@bodanapu\"",
+        "\"kalyani8bodanapu\"",
+        "\"kni123!\"",
+        "\"NotLoggedIn\""
+      ]
+    },
+    {
+      "cells": [
+        "\"invalid\"",
+        "\"kalyanibodanapu\"",
         "\"kni123!\"",
         "\"NotLoggedIn\""
       ]
@@ -53,7 +77,7 @@ formatter.examples({
     {
       "cells": [
         "\"invalid\"",
-        "\"12345\"",
+        "\"123456\"",
         "\"kAlyani123!\"",
         "\"NotLoggedIn\""
       ]
@@ -68,10 +92,10 @@ formatter.examples({
     },
     {
       "cells": [
-        "\"invalid\"",
+        "\"unknownError\"",
         "\"00000$^\"",
         "\"4534353\"",
-        "\"NotLoggedIn\""
+        "\"unknownError\""
       ]
     }
   ]
@@ -95,7 +119,130 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter \"invalid\" login details username_\"kalyani@bodanapu\" and password_\"kni123!\"",
+  "name": "Enter \"emptyUser\" login details username_\"\" and password_\"kAlyani123!\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "steps.Depop_Login.enter_login_details_username__and_password_(java.lang.String,java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is \"userRequiredError\" with \"emptyUser\" details",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "steps.Depop_Login.user_is_with_details(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Valid/Invalid Logging in",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Navigate to Depop Login page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "steps.Depop_Login.navigate_to_Depop_Login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter \"emptyPassword\" login details username_\"kalyanibodanapu\" and password_\"\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "steps.Depop_Login.enter_login_details_username__and_password_(java.lang.String,java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is \"PasswordRequiredError\" with \"emptyPassword\" details",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "steps.Depop_Login.user_is_with_details(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Valid/Invalid Logging in",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Navigate to Depop Login page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "steps.Depop_Login.navigate_to_Depop_Login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter \"invalid\" login details username_\"kalyani8bodanapu\" and password_\"kni123!\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "steps.Depop_Login.enter_login_details_username__and_password_(java.lang.String,java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is \"NotLoggedIn\" with \"invalid\" details",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "steps.Depop_Login.user_is_with_details(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Valid/Invalid Logging in",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Navigate to Depop Login page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "steps.Depop_Login.navigate_to_Depop_Login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter \"invalid\" login details username_\"kalyanibodanapu\" and password_\"kni123!\"",
   "keyword": "When "
 });
 formatter.match({
@@ -177,7 +324,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter \"invalid\" login details username_\"12345\" and password_\"kAlyani123!\"",
+  "name": "Enter \"invalid\" login details username_\"123456\" and password_\"kAlyani123!\"",
   "keyword": "When "
 });
 formatter.match({
@@ -259,7 +406,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Enter \"invalid\" login details username_\"00000$^\" and password_\"4534353\"",
+  "name": "Enter \"unknownError\" login details username_\"00000$^\" and password_\"4534353\"",
   "keyword": "When "
 });
 formatter.match({
@@ -269,7 +416,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User is \"NotLoggedIn\" with \"invalid\" details",
+  "name": "User is \"unknownError\" with \"unknownError\" details",
   "keyword": "Then "
 });
 formatter.match({
