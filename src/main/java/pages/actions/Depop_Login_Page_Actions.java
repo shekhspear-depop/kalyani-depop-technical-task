@@ -1,6 +1,8 @@
 package pages.actions;
 
 import base.DepopDriver;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.support.PageFactory;
 import pages.locators.Depop_Login_Page_Locators;
 
@@ -31,8 +33,26 @@ public class Depop_Login_Page_Actions {
         locators.loginButton.click();
     }
 
+    public boolean isUserRequiredError() {
+        return locators.userRequiredError.isDisplayed();
+    }
+
+    public boolean isPasswordRequiredError() {
+        return locators.passwordRequiredError.isDisplayed();
+    }
+
     public boolean isInvalidError() {
         return locators.loginError.isDisplayed();
+    }
+
+    public String getUserLoginErrorMessage() {
+        System.out.println(locators.userRequiredError.getText());
+        return locators.userRequiredError.getText();
+    }
+
+    public String getPasswordLoginErrorMessage() {
+        System.out.println(locators.passwordRequiredError.getText());
+        return locators.passwordRequiredError.getText();
     }
 
     public String getLoginErrorMessage() {
@@ -41,7 +61,16 @@ public class Depop_Login_Page_Actions {
     }
 
     public String isUserLoggedIn() {
-        if(locators.depopSearch.isDisplayed()) {
+        boolean searchButton = false;
+
+        try {
+            searchButton = locators.depopSearch.isDisplayed();
+        }
+        catch (NoSuchElementException | StaleElementReferenceException e) {
+            System.out.println(e);
+        }
+
+        if(searchButton) {
             return "LoggedIn";
         }
         return "NotLoggedIn";

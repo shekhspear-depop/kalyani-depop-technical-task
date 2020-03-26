@@ -18,6 +18,12 @@ public class Depop_Login_Page_Locators {
     @FindBy(how = How.CSS, using = "[data-testid=login__cta]")
     public WebElement loginButton;
 
+    @FindBy(how = How.CSS, using = "[data-testid=login__error--username]")
+    public WebElement userRequiredError;
+
+    @FindBy(how = How.CSS, using = "[data-testid=login__error--password]")
+    public WebElement passwordRequiredError;
+
     @FindBy(how = How.CSS, using = "[data-testid=login__error--server]")
     public WebElement loginError;
 
