@@ -30,12 +30,6 @@ public class Depop_Login {
         depop_login_page_actions.enterUsername(username);
         depop_login_page_actions.enterPassword(password);
         depop_login_page_actions.clickLoginButton();
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     @Then("User is {string} with {string} details")
