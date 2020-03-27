@@ -17,4 +17,3 @@ Feature: Depop Login
       |"invalid"      |"123456"                      |"kAlyani123!"  |"NotLoggedIn"           |
       |"valid"        |"bkalyani10@yahoo.com"        |"kAlyani123!"  |"LoggedIn"              |
       |"unknownError" |"00000$^"                     |"4534353"      |"unknownError"          |
-    

@@ -49,4 +49,4 @@ Gave as much information as I can and please do contact me if you need any furth
 
 # Test Strategy document
 
-Test Strategy document is prepared for review for this login functionality project.
+Test Strategy document is included in this project repository for review for this login functionality project.
